@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { useEffect } from 'react';
+import { Produto } from './componentes/Produto';
 
 
 function App() {
+
   const [numero, setNumero] = useState()
   const [NumeroEmReais, setNumeroEmReais] = useState("");
 
@@ -19,6 +21,12 @@ function App() {
 
   return (
     <div>
+      <Produto nome="Mesa" preco="100"/>
+      <Produto nome="Tênis" preco="80"/>
+      <Produto nome="JEEP" preco="160000"/>
+      <Produto nome="Vacalo" preco="32000"/>
+      <Produto nome="Doritos" preco="10"/>
+      
       <input 
         type="number" 
         name="valor"
